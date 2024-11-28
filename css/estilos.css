@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'strawberry';
+    src: url('../Fuentes/Strawberry_Blossom.otf') format('opentype'),
+         url('../Fuentes/Strawberry_Blossom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{scroll-behavior: smooth;}
+
+
+*{
+box-sizing: border-box;
+margin:0;
+padding: 0;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+background-color: black;
+}
+
+.contenedor{
+width: 90%;
+max-width: 650px;
+margin:auto;
+}
+
+a{text-decoration: none;}
+
+/*-------------------------Menu---------------------*/
+
+header{
+width:100%;
+height: 200px;}
+
+
+.logo{padding: 25px 0;}
+
+.logo img{
+width:120px;
+display:flex;
+margin:auto;
+}
+
+
+.menu{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 430px;
+margin:auto;
+}
+
+.menu a{
+text-decoration: none;
+color:goldenrod;
+font-size: 17px;
+}
+    
+a:hover{color:white; }
+
+
+
+
+@media all and (min-width:650px){ 
+header{
+width:100%;
+height: 150px;
+display: flex;
+justify-content: space-between;
+}
+
+.inicio{
+width:100%;
+height: 150px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;   
+}
+
+.logo{
+width: 110px;
+margin: auto;
+}
+
+.logo img{width: 100%;}
+
+.menu{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin:auto;
+width: 100%;
+}
+
+.menu a{font-size: 20px;}
+}
+    
+
+
+
+/*---------------------Banner-------------------*/
+
+
+.Banner{
+width: 100%;
+height: 500px;
+background-image: url(../img/fondo.png);
+background-position: center;
+background-size: cover;
+}
+
+.titulo{
+text-align: center;
+display: flex;
+flex-flow: column wrap;
+justify-content:center;
+height: 100%;
+align-items: center;
+}
+
+.titulo p{
+font-size: 60px;
+font-family: 'strawberry';
+padding:20px 5px ;
+background-color: rgba(255, 255, 255, 0.6);
+max-width: 650px;  
+}
+
+/*-Informacion-*/
+
+.informacion{
+width:100%;
+background-color: goldenrod;
+}
+
+.info{
+color: black;
+font-size: 17px;
+padding-top: 20px;
+text-align: center;
+font-weight: bold;
+}
+
+.interrogante{
+color: black;
+font-size: 17px;
+padding: 20px 0;
+text-align: center;
+font-weight: bold;
+}
+
+
+/*---------------------------------servicios-------------------*/
+
+.Servicios{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+.Servicios > .contenedor{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+background-color: #0c0c0b;
+margin:auto;
+}
+
+
+.fotoservicios{
+width: 80%;
+max-width: 250px;
+margin:auto;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+.fotoservicios img{width: 100%; margin: auto;}
+
+
+.texto-servicios > .servicios {
+font-size: 60px;
+font-family:'strawberry';
+text-align: center;
+color: goldenrod;
+padding-top: 10px;
+}
+
+.texto-servicios{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+}
+
+.texto-servicios p{
+font-size: 17px;
+color: goldenrod;
+text-align: center;
+max-width: 300px;
+margin: 0 auto;
+}
+
+.texto-servicios p:nth-child(2){padding-bottom: 20px;}
+
+
+@media all and (min-width:650px){
+.texto-servicios{padding-left: 20px;}
+
+.texto-servicios >.servicios {
+padding-bottom: 20px;
+padding-top: 0px;	
+}
+
+
+	
+}
+
+/*-----------------------------------Sobre nosotros--------------------*/
+
+.sobre_nosotros{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+    
+    
+.sobre_nosotros > .contenedor{
+display: flex;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+justify-content: center;
+background-color: #0c0c0b;
+margin:auto;
+}
+    
+    
+.foto_sobre_nosotros{
+width: 80%;
+max-width: 250px;
+margin:auto;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+    
+
+.foto_sobre_nosotros img{width: 100%; margin:auto;}
+    
+.texto_sobre_nosotros > .strawberry{
+font-size: 60px;
+font-family:'strawberry';
+text-align: center;
+color: goldenrod;
+padding-top: 10px;
+}
+   
+.texto_sobre_nosotros p{
+font-size: 17px;
+color: goldenrod;
+text-align: center;
+max-width: 300px;
+margin: 0 auto;
+}
+
+.texto_sobre_nosotros p:nth-child(2){
+padding-top: 10px;
+padding-bottom: 20px;
+}
+
+@media all and (min-width:650px){
+.texto_sobre_nosotros{
+padding-right: 20px;
+padding-bottom: 20px;
+}
+	
+.texto_sobre_nosotros >.strawberry {
+padding-bottom: 20px;
+padding-top: 10px;	
+}
+	
+
+		
+		
+}
+
+/*--------------------------galeria------------------------------------*/
+
+.galeria_de_proyectos > .contenedor{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+background-color: #0c0c0b;
+margin:auto;
+}
+
+.textogp{
+width: 80%;
+max-width: 570px;
+margin:auto;
+padding-bottom: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.textogp p{
+font-size: 60px;
+font-family:'strawberry';
+text-align: center;
+color: goldenrod;
+padding-top: 10px;
+}
+
+#slider {
+	overflow: hidden;
+	max-width: 450px;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 10s slider infinite;
+    margin-top: 10px;
+}
+#slider figure img {
+	width: 20%;
+    height: 350px;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+@media all and (min-width:650px){
+	
+	#slider figure img{
+		padding-left: 60px;
+	}
+}
+
+
+/*-pedidos-*/
+
+.contactanos {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+    
+    
+.contactanos > .contenedor{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+background-color: #0c0c0b;
+margin:auto;
+align-items: center;
+}
+    
+    
+.iconos{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
+max-width: 570px;
+margin:auto;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+    
+.whatsapp{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.whatsapp a{max-width: 250px;}
+
+.whatsapp a img {
+width: 30%;
+margin: auto;
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.instagram{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.instagram a{max-width: 250px;}
+
+.instagram a img {
+width: 30%;
+margin: auto;
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+    
+    
+.texto-contacto > .strawberry{
+font-size: 60px;
+font-family:'strawberry';
+text-align: center;
+color: goldenrod;
+padding-top: 10px;
+}
+    
+.texto-contacto p{
+font-size: 17px;
+color: goldenrod;
+text-align: center;
+}
+
+    
+.usuario{
+font-size: 17px;
+color: goldenrod;
+text-align: center;
+}
+
+.numerows{
+font-size: 17px;
+color: goldenrod;
+text-align: center;
+padding-bottom: 10px;
+}
+    
+@media all and (min-width:650px){
+.instagram{padding-bottom: 10px;}
+}
+
+.copy{
+font-size: 17px;
+color: goldenrod;
+text-align: center;}
